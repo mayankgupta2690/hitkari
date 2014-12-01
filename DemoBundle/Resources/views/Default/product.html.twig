@@ -1,0 +1,36 @@
+{% extends 'HitkariDemoBundle:Default:index.html.twig' %}
+
+{% block body %}
+<h1><center> Product Page </center></h1>
+	<div id="slideshow_container">  
+  		<div class="slideshow">
+  			<a href= "dfdfs">
+    		<ul class="slideshow">
+      			<li class="show">
+      				{% image '@HitkariDemoBundle/Resources/public/images/conventional_tread_rubber.jpg' %}
+					<img src="{{ asset_url }}" alt="Example" width ="940" height="250" />
+					{% endimage %}
+				</li>
+      			<li>
+      				{% image '@HitkariDemoBundle/Resources/public/images/conventional_tread_rubber2.jpg' %}
+					<img src="{{ asset_url }}" alt="Example" width ="940" height="250" />
+					{% endimage %}
+				</li>
+      			<li>
+      				{% image '@HitkariDemoBundle/Resources/public/images/conveyor.jpg' %}
+					<img src="{{ asset_url }}" alt="Example" width ="940" height="250" />
+					{% endimage %}
+				</li>
+      			<li>
+      				{% image '@HitkariDemoBundle/Resources/public/images/conveyor2.jpg' %}
+					<img src="{{ asset_url }}" alt="Example" width ="940" height="250" />
+					{% endimage %}
+				</li>
+    		</ul>  </a>
+  		</div><!--close slideshow-->  	
+	</div><!--close slideshow_container-->  
+	
+
+
+
+{% endblock %}

@@ -1,0 +1,15 @@
+_homepage:
+    pattern:  /home
+    defaults: { _controller: HitkariDemoBundle:Default:index }
+
+_product:
+    pattern:  /product
+    defaults: { _controller: HitkariDemoBundle:Default:product }
+
+_contactus:
+    pattern:  /contactus
+    defaults: { _controller: HitkariDemoBundle:Default:contactus }
+
+_email:
+    pattern:  /email
+    defaults: { _controller: HitkariDemoBundle:Default:email }

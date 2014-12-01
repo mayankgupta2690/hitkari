@@ -1,0 +1,86 @@
+{% extends 'HitkariDemoBundle:Default:index.html.twig' %}
+
+	{% block body %}
+
+    	<div id="slideshow_container">  
+	  		<div class="slideshow">
+	    		<ul class="slideshow">
+          			<li class="show">
+          				{% image '@HitkariDemoBundle/Resources/public/images/home_1.jpg' %}
+    					<img src="{{ asset_url }}" alt="Example" width ="940" height="250" />
+						{% endimage %}
+					</li>
+          			<li>
+          				{% image '@HitkariDemoBundle/Resources/public/images/home_2.jpg' %}
+    					<img src="{{ asset_url }}" alt="Example" width ="940" height="250" />
+						{% endimage %}
+					</li>
+        		</ul> 
+	  		</div><!--close slideshow-->  	
+		</div><!--close slideshow_container-->   
+	
+		<div id="site_content">		
+	  		<div class="sidebar_container">       
+				<div class="sidebar">
+          			<div class="sidebar_item">
+            			<h2>New Website</h2>
+            			<p>Welcome to our new website. Please have a look around, any feedback is much appreciated.</p>
+          			</div><!--close sidebar_item--> 
+        		</div><!--close sidebar-->     		
+				<div class="sidebar">
+          			<div class="sidebar_item">
+            			<h2>Latest Update</h2>
+            			<h3>March 2013</h3>
+            			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>         
+		  			</div><!--close sidebar_item--> 
+        		</div><!--close sidebar-->
+				<div class="sidebar">
+          			<div class="sidebar_item">
+            			<h3>February 2013</h3>
+            			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>         
+		  			</div><!--close sidebar_item--> 
+        		</div><!--close sidebar-->  		
+        		<div class="sidebar">
+          			<div class="sidebar_item">
+            			<h2>Contact</h2>
+            			<p>Phone: +44 (0)1234 567891</p>
+            			<p>Email: <a href="mailto:info@youremail.co.uk">info@youremail.co.uk</a></p>
+          			</div><!--close sidebar_item--> 
+        		</div><!--close sidebar-->
+       		</div><!--close sidebar_container-->	
+	   
+	  	<div id="content">
+        	<div class="content_item">
+		  		<h1>About Hitkari Rubber Industries</h1> 
+          			<p>"Hitkari Rubber Industries" was founded way back in the year 1981, by the visionary technocrat 'Mr. Hitesh Gupta'. In those initial years of Indian industrial revolution, Hitkari Rubber Industries began to prosper steadily with its strong commitment to quality and its technology excellence and innovation.Bound by honest human values like integrity, commitment and competitiveness with equal passion for technology, the company has consistently offered and introduced revolutionary rubber retread products that are ahead of times. And today the company offers a wide range of Green Tyres, Cushion Gum, Vulcanizing Solution, Unvulcanized Rubber Compound, Mines Precured Tread Rubber, Precured Tread Rubber of various grades, Hot Tread Rubber and Cold Tread Rubber and also manufactures customized retread products in-line with client requirements.<br><br>
+
+					We have our time and funds invested in regular R&D activities to develop and deliver superior compounds that give higher mileage and performance. Our consistent and advanced testing processes ensure that our customers get products that guarantee exemplary performance, comfort, durability and reliability.<br>
+
+					Our loyal approach to achieve unmatched quality standards, prompt deliveries and client services have helped us gain tremendous client trust and today we are proud to have a humungous clientele spread across the globe which is happy and satisfied with our products, services and our continued excellence and innovation.</p>   		
+	  			<h1>Company Core Values</h1>
+		  			<p><b>As an ethical and responsible organization we are bound by our company core values that include:</b><br>
+ 
+					<b>Integrity:</b> Ethical, Responsible and Reliable Actions and Behavior<br>
+					<b>Commitment:</b> Perseverance, Consistency and Loyalty in product quality and client services<br>
+					<b>Customer Satisfaction:</b> Anticipate & Exceed Client expectations by offering impeccable Quality products and services<br>
+					<b>Competitiveness:</b> Continuous improvement of processes, people and positive attitude towards challenges<br>
+					<b>Teamwork:</b> Mutual respect and fairness. Creating a harmonious and fun environment where every member feels free, safe and motivated to contribute <br></p>
+	  
+		  		<p><h1>Our Team</h1><br>
+
+					We, at Hitkari Rubber Industries have a team of dexterous and adroit professionals who work relentlessly behind the continued success of our organization and strive hard to offer excellent quality retreading products and client services.
+
+					The team consists of designers, engineers, labourers, quality controllers, chemists, rubber technology specialists, R&D experts, warehouse, logistics and packaging staff along with sales and marketing professionals. It works in one accord to ensure unmatched quality products and services to our esteemed clients.
+
+					With regular trainings and skill enhancement programs our team is always abreast with current technology and market trends and is ever ready to serve the clients in best possible ways.</p>
+
+  			</div><!--close content_container-->
+      		
+      			<h1>Clientele</h1>
+		    	<p>Client Satisfaction is our first priority. We have maintained the customer trust in us intact by adhering to timeliness, excellent quality products and efficient and prompt services to the clients irrespective of their geographical positioning. This distinguishes us from the counterparts and sets us apart as the market leaders with an enviable size of clientele spread across the country.Our clientele is spread across domestic and Asian markets which is pleased with our quality standards and commitment levels and has maintained continued business relations with us year after year.</p>
+		  	</div><!--close content_item-->
+		</div><!--close content-->   
+	</div><!--close site_content-->  
+
+
+{% endblock %}

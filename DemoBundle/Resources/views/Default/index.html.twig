@@ -1,0 +1,67 @@
+<!DOCTYPE>
+<html>
+<head>
+{% block stylesheets %}
+            {% stylesheets
+            'bundles/demobundle/css/style.css' 
+    filter='cssrewrite' %}
+                <link rel="stylesheet" href="{{ asset_url }}" />
+            {% endstylesheets %}
+        {% endblock %}
+{% javascripts 
+    '@HitkariDemoBundle/Resources/public/js/modernizr-1.5.min.js' 
+    '@HitkariDemoBundle/Resources/public/js/jquery.min.js'
+    '@HitkariDemoBundle/Resources/public/js/image_slide.js'
+    %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+
+        <script type="text/javascript">
+        function active(){
+        var node = document.getElementById("menubar").getElementsByTagName("li")[1];
+		node.setAttribute("class", "current");
+        return true;
+        }
+        </script>
+        
+</head>
+<body>
+
+
+  <div id="main">		
+
+    <header>
+	  <div id="strapline">
+	    <div id="welcome_slogan">
+	      <h3>Hitkari Rubber <span>Works</span></h3>
+	    </div><!--close welcome_slogan-->
+      </div><!--close strapline-->	  
+	  <nav>
+	    <div id="menubar">
+          <ul id="nav">
+            <li class="current"><a href="/sy_pro/web/app_dev.php/home">Home</a></li>
+            <li id= list2><a href="/sy_pro/web/app_dev.php/product" onClick="return active();">Our Products</a></li>
+            <li><a href="/sy_pro/web/app_dev.php/product">Testimonials</a></li>
+            <li><a href="/sy_pro/web/app_dev.php/home">Projects</a></li>
+            <li><a href="/sy_pro/web/app_dev.php/contactus">Contact Us</a></li>
+          </ul>
+        </div><!--close menubar-->	
+      </nav>
+    </header>
+     {% block body %}
+      {% endblock %}
+
+
+    <footer>
+	  <a href="/sy_pro/web/app_dev.php/home">Home</a> | <a href="/sy_pro/web/app_dev.php/product">Our Products</a> | <a href="/sy_pro/web/app_dev.php/product">Testimonials</a> | <a href="/sy_pro/web/app_dev.php/product">Projects</a> | <a href="/sy_pro/web/app_dev.php/contactus">Contact</a><br/><br/>
+	  
+    </footer>
+	
+  </div><!--close main-->
+
+  
+
+
+
+
+ </html>

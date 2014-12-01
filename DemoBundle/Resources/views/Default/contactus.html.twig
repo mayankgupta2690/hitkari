@@ -1,0 +1,44 @@
+{% extends 'HitkariDemoBundle:Default:index.html.twig' %}
+
+{% block body %}
+	<div id="slideshow_container">  
+  		<div class="slideshow">
+  			<a href= "dfdfs">
+    		<ul class="slideshow">
+      			<li class="show">
+      				{% image '@HitkariDemoBundle/Resources/public/images/conventional_tread_rubber.jpg' %}
+					<img src="{{ asset_url }}" alt="Example" width ="940" height="250" />
+					{% endimage %}
+				</li>
+      			<li>
+      				{% image '@HitkariDemoBundle/Resources/public/images/conventional_tread_rubber2.jpg' %}
+					<img src="{{ asset_url }}" alt="Example" width ="940" height="250" />
+					{% endimage %}
+				</li>
+      			<li>
+      				{% image '@HitkariDemoBundle/Resources/public/images/conveyor.jpg' %}
+					<img src="{{ asset_url }}" alt="Example" width ="940" height="250" />
+					{% endimage %}
+				</li>
+      			<li>
+      				{% image '@HitkariDemoBundle/Resources/public/images/conveyor2.jpg' %}
+					<img src="{{ asset_url }}" alt="Example" width ="940" height="250" />
+					{% endimage %}
+				</li>
+    		</ul>  </a>
+  		</div><!--close slideshow-->  	
+	</div><!--close slideshow_container-->  
+
+<div id="site_content">	
+<div id="content">
+<h1> Send your Queries to us:-</h1>
+*Name:- <input type= "text" name="senderName" id= "senderName" ><br><br>
+*Email:- <input type= "text" name="senderEmail" id= "senderEmail" ><br><br>
+*Query:-<br><textarea rows="4" cols="50">
+</textarea><br><br><br>
+ <div class="button_small"> <a href='#'>Send</a></div>
+</div>
+</div>
+
+
+{% endblock %}
